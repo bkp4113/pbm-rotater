@@ -19,7 +19,7 @@ def curr_date_time():
     curr_date_time [ A func for current date and time.]
 
     Returns:
-        [`str`]: [Datetime]
+        [`str`]: [Current Datetime]
     """
 
     return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -207,3 +207,5 @@ if __name__ == "__main__":
     write_file(parser.export_path, rotated_pbm)
     buffered_data = read_file(parser.export_path)
     validate_file(buffered_data)
+
+#EOF
