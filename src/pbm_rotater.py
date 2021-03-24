@@ -95,7 +95,6 @@ def validate_file(buffered_data):
 
     split_line_list = buffered_data.split("\n")
     file_length = len(split_line_list)
-    matrix_length = list()
 
     if file_length <= 1:
         log_error("File not in pbm format !")
