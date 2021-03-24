@@ -6,7 +6,7 @@ for f in `ls ./driver_pbm`;do
     for d in ${degree//;/ } ; do 
         echo "$python3 ./src/pbm_rotater.py --path ./driver_pbm/${f} --export_path /tmp/new.pbm --degree ${d}"
         $python3 ./src/pbm_rotater.py --path ./driver_pbm/${f} --export_path /tmp/new.pbm --degree ${d}
-        if [[ -f /tmp/new.pbm ]]; then
+        if [[ "$?" -eq "0" ]]; then
             cat /tmp/new.pbm
         fi
         echo ""

@@ -82,7 +82,7 @@ def log_error(msg):
     """
 
     logger.error(curr_date_time() + ' : ' + msg)
-    sys.exit(0)
+    sys.exit(1)
 
 # CORE Func.
 def validate_file(buffered_data):
